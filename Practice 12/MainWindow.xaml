@@ -36,10 +36,10 @@
                         <GroupBox Header="Исходные данные" Grid.Column="0">
                             <Grid>
                                 <StackPanel Orientation="Vertical" Width="30" Height="140">
-                                    <TextBox x:Name="xOneInput" Height="20" Width="30" HorizontalAlignment="Right" VerticalAlignment="Top" />
-                                    <TextBox x:Name="xTwoInput" Height="20" Width="30" HorizontalAlignment="Right" Margin="0,20" />
-                                    <TextBox x:Name="yOneInput"  Height="20" Width="30" HorizontalAlignment="Right"/>
-                                    <TextBox x:Name="yTwoInput" Height="20" Width="30" HorizontalAlignment="Right" Margin="0,20"/>
+                                    <TextBox x:Name="xOneInput" Height="20" Width="30" HorizontalAlignment="Right" VerticalAlignment="Top" TextChanged="AllTextBoxes_TextChanged"  />
+                                    <TextBox x:Name="xTwoInput" Height="20" Width="30" HorizontalAlignment="Right" Margin="0,20" TextChanged="AllTextBoxes_TextChanged"  />
+                                    <TextBox x:Name="yOneInput"  Height="20" Width="30" HorizontalAlignment="Right" TextChanged="AllTextBoxes_TextChanged" />
+                                    <TextBox x:Name="yTwoInput" Height="20" Width="30" HorizontalAlignment="Right" Margin="0,20" TextChanged="AllTextBoxes_TextChanged"/>
                                 </StackPanel>
 
                                 <StackPanel Orientation="Vertical" Width="20" Height="140" Margin="0,0,60,0">
@@ -69,7 +69,7 @@
                         <GroupBox Header="Исходные данные" Grid.Column="0">
                             <Grid>
                                 <StackPanel Orientation="Vertical" Width="35" Height="20" VerticalAlignment="Center">
-                                    <TextBox x:Name="threeDigitNumberInput" Height="20" Width="35" HorizontalAlignment="Right" VerticalAlignment="Top" />
+                                    <TextBox x:Name="threeDigitNumberInput" Height="20" Width="35" HorizontalAlignment="Right" VerticalAlignment="Top" TextChanged="AllTextBoxes_TextChanged" />
                                 </StackPanel>
 
                                 <StackPanel Orientation="Vertical" Width="40" Height="20" Margin="0,0,90,0" VerticalAlignment="Center">

@@ -54,6 +54,12 @@ namespace Practice_12
             }
         }
 
+        private void AllTextBoxes_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            firstTaskResult.Clear();
+            secondTaskReuslt.Clear();
+        }
+
         private void Information_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Выполнил Гаврюшин К. А. ИСП-34.", "О программе", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -63,6 +69,5 @@ namespace Practice_12
         {
             Close();
         }
-
     }
 }
